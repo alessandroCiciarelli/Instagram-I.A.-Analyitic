@@ -108,7 +108,7 @@ if submit_button:
         n=1
         for i in topurls:
             response = requests.get(i)
-            filename=f"static/{n}.jpeg"md
+            filename=f"static/{n}.jpeg"
             with open(filename, "wb") as f:
                 f.write(response.content)
             n+=1
