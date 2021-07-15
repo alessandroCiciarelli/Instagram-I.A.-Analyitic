@@ -25,7 +25,7 @@ import os
 if submit_button:
     
     if not os.path.exists(f'{username}'):
-        os.system(f'instagram-scraper "{username}" --profile-metadata  --media-metadata  --media-types none -u sharks_business_holding -p Al260900.')
+        os.system(f'instagram-scraper "{username}" --profile-metadata  --media-metadata  --media-types none')
     try:
         print("ok")
         js = json.load(open(f'{username}/{username}.json', encoding='utf-8'))
